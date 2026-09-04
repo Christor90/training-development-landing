@@ -1,10 +1,15 @@
+
+import Header from '../src/components/Header/Header';
+
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Components will be added here */}
-      <div className="h-screen flex items-center justify-center bg-gray-100">
-        <p className="text-3xl text-blue-300 font-bold">Training & Development Landing Page</p>
-      </div>
+    <main className="min-h-screen bg-white">
+      <Header />
+      
+      {/* Placeholder for next section */}
+      <section className="h-96 bg-gray-50 flex items-center justify-center">
+        <p className="text-xl text-gray-600">Hero section coming in Phase 3...</p>
+      </section>
     </main>
   );
 }
