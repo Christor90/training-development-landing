@@ -21,8 +21,8 @@ export default function Header() {
           {/* Right Side: Account + Assessment Button */}
           <div className="flex items-center gap-4 ml-auto">
             {/* Account Dropdown Button */}
-            <button className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg
-              bg-pink-900 text-white font-medium hover:bg-brown-200 transition-colors
+            <button className="hidden md:flex items-center gap-2 px-4 py-2 rounded-md
+              bg-[#571244] text-white font-medium hover:bg-brown-200 transition-colors
               focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
               <User size={20} />
               <span>Account</span>
@@ -30,7 +30,7 @@ export default function Header() {
             </button>
 
             {/* Take Assessment Button */}
-            <button className="px-6 py-2 rounded-lg bg-red-500 text-white font-semibold
+            <button className="hidden md:flex px-6 py-2 rounded-md bg-red-500 text-white font-semibold
               hover:bg-red-600 transition-colors
               focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2
               whitespace-nowrap">

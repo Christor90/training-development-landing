@@ -65,11 +65,11 @@ export default function Navigation({ isMobile = false }: NavigationProps) {
 
   // Desktop Navigation - with proper spacing
   return (
-    <div className="flex items-center space-x-6">
+    <div className="flex items-center space-x-6 py-4">
       {navItems.map((item) => (
         <div key={item.label} className="relative group">
           <button
-            className="text-gray-800 font-medium text-sm hover:text-[#571244] transition-colors
+            className="text-gray-800 font-medium text-sm hover:text-[#420932] transition-colors
               flex items-center space-x-1
               pb-1 border-b-2 border-transparent hover:border-purple-600
               focus:outline-none focus:ring-2 focus:ring-purple-600 rounded px-2 py-1"
@@ -81,7 +81,7 @@ export default function Navigation({ isMobile = false }: NavigationProps) {
           {/* Dropdown Menu - Desktop Only */}
           {item.hasDropdown && (
             <div className="absolute left-0 mt-0 w-48 bg-white rounded-lg shadow-lg opacity-0 
-              invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10 py-2">
+              invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
               <Link href="#" className="block px-4 py-3 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors first:rounded-t-lg">
                 Submenu 1
               </Link>
