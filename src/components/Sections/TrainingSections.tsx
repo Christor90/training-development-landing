@@ -70,7 +70,7 @@ function TrainingCard({ section }: { section: TrainingItem }) {
 
   return (
     <section className="py-16 sm:py-20 md:py-8 lg:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className={`grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center`}
         >

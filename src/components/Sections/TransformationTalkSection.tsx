@@ -34,8 +34,8 @@ const transformationTalkData: TransformationTalkData = {
 
 export default function TransformationTalkSection() {
   return (
-    <section className="sm:py-10  bg-[#EF435333]/15 rounded-3xl mx-4 sm:mx-6 lg:mx-8 my-16 sm:my-20 md:my-24 lg:my-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="sm:py-10 pt-7  bg-[#EF435333]/15 rounded-3xl mx-4 sm:mx-6 lg:mx-8 my-16 sm:my-20 md:my-24 lg:my-32">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8 lg:space-y-12">
           
           {/* Header Content */}
