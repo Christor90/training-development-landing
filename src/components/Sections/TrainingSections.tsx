@@ -1,5 +1,4 @@
 
-
 import Image from 'next/image';
 import { Zap } from 'lucide-react';
 
@@ -76,7 +75,7 @@ function TrainingCard({ section }: { section: TrainingItem }) {
           className={`grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center`}
         >
           {/* Content */}
-          <div className={isImageRight ? '' : 'md:order-2'}>
+          <div  className={`${isImageRight ? 'order-2 md:order-1' : 'order-2 md:order-2'}`}>
             <div className="space-y-6">
               {/* Heading */}
               <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-gray-900">
