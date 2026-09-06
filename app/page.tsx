@@ -7,6 +7,7 @@ import ManagementDevelopmentSection from '@/src/components/Sections/ManagementDe
 import TransformationTalkSection from '@/src/components/Sections/TransformationTalkSection';
 import TrainingConsultantSection from '@/src/components/Sections/TrainingConsultantSection';
 import CallToActionSection from '@/src/components/Sections/CallToActionSection';
+import TestimonialsSection from '@/src/components/Sections/TestimonialsSection';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <TransformationTalkSection />
       <TrainingConsultantSection />
       <CallToActionSection />
+      <TestimonialsSection />
     </main>
   );
 }
