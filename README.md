@@ -1,7 +1,10 @@
 
 # Training and Development Landing Page
 
-A production-ready Next.js landing page for a training and development company, built with TypeScript, Tailwind CSS, and Lucide React icons.
+A production-ready Next.js landing page for a training and development company, built with TypeScript, Tailwind CSS, and Lucide React icons and React-icons.
+
+
+Live URL: https://training-development-landing.vercel.app/
 
 
 
@@ -21,18 +24,11 @@ A production-ready Next.js landing page for a training and development company, 
 - **Framework:** Next.js 14+
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Icons:** Lucide React
+- **Icons:** Lucide React, React icons
 - **Deployment:** Vercel
 - **Package Manager:** npm
 
 ## Setup & Installation
-
-### Prerequisites
-- Node.js 18+
-- npm or yarn
-- Git
-
-### Installation
 
 ```bash
 # Clone repository
@@ -64,4 +60,13 @@ npm start
 ## Design Reference
 
 **Figma:** https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment
+
+## Git Workflow
+
+All development follows a structured git workflow:
+- Main features built on `development` branch
+- Each phase committed with descriptive messages
+- Merged to `main` for stability
+- Production deployed from `main`
+
 
