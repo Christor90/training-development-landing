@@ -6,8 +6,6 @@ A production-ready Next.js landing page for a training and development company, 
 
 Live URL: https://training-development-landing.vercel.app/
 
-
-
 ## Features
 
 - Pixel-perfect Figma design implementation
