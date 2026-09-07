@@ -8,6 +8,7 @@ import TransformationTalkSection from '@/src/components/Sections/TransformationT
 import TrainingConsultantSection from '@/src/components/Sections/TrainingConsultantSection';
 import CallToActionSection from '@/src/components/Sections/CallToActionSection';
 import TestimonialsSection from '@/src/components/Sections/TestimonialsSection';
+import Footer from '@/src/components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <TrainingConsultantSection />
       <CallToActionSection />
       <TestimonialsSection />
+      <Footer />
     </main>
   );
 }

@@ -18,7 +18,7 @@ export default function TestimonialsSection() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      image: '/testimonial-1.jpg',
+      image: '/testi-1.png',
       name: 'Aisha Yusuf',
       role: 'Founder, CraftHub NG',
       text: 'Working with Tobams Group on our website was a breeze. They understood our vision and transformed it into a beautiful online space. Highly recommend their Website Design service!',
@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
     },
     {
       id: 2,
-      image: '/testimonial-2.jpg',
+      image: '/testi-2.png',
       name: 'John Davies',
       role: 'Marketing Manager, E-Commerce Emporium',
       text: 'Tobams Group\'s Digital Marketing strategies gave our brand the boost it needed. Simple yet powerful techniques that delivered tangible results. A pleasure to collaborate with!',
@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
     },
     {
       id: 3,
-      image: '/testimonial-3.jpg',
+      image: '/testi-3.png',
       name: 'Chinonso Nwankwo',
       role: 'HR Director, FutureTech Solutions',
       text: 'Tobams Group has been instrumental in our talent acquisition journey. Their Tech Talent Solution service consistently connects us with the right professionals. Reliable and straightforward.',
@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
     },
     {
       id: 4,
-      image: '/testimonial-4.jpg',
+      image: '/testi-4.jpg',
       name: 'Thandi Mthembu',
       role: 'CEO, Innovation Leaders',
       text: 'The business consulting services provided by Tobams Group have transformed our operations. Strategic, insightful, and results-driven. Highly recommend to any growing organization.',
@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
     },
     {
       id: 5,
-      image: '/testimonial-5.jpg',
+      image: '/testi-1.png',
       name: 'Priya Sharma',
       role: 'Operations Manager, TechStart Inc',
       text: 'Exceptional service and attention to detail. Tobams Group understood our needs and delivered beyond expectations. A true partner in our growth journey.',
@@ -58,7 +58,7 @@ export default function TestimonialsSection() {
     },
     {
       id: 6,
-      image: '/testimonial-6.jpg',
+      image: '/testi-2.png',
       name: 'Amara Okonkwo',
       role: 'Startup Founder, Digital Hub Africa',
       text: 'Outstanding training and development programs. The facilitators are knowledgeable, engaging, and truly invested in your success. Highly transformative experience.',
@@ -80,11 +80,11 @@ export default function TestimonialsSection() {
 
   return (
     <section className="sm:py-10 pt-7 bg-gray-50">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-4xl sm:text-4xl md:text-4xl font-bold text-gray-900">
+        <div className="mb-12 text-center lg:mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 sm:text-4xl md:text-4xl">
             Testimonials
           </h2>
         </div>
@@ -93,16 +93,16 @@ export default function TestimonialsSection() {
         <div className="relative">
           <div
             ref={scrollContainerRef}
-            className="flex gap-6 lg:gap-8 overflow-x-auto scroll-smooth pb-4 scrollbar-hide"
+            className="flex gap-6 pb-4 overflow-x-auto lg:gap-8 scroll-smooth scrollbar-hide"
             style={{ scrollBehavior: 'smooth' }}
           >
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="flex-shrink-0 w-full sm:w-96 bg-white rounded-lg border-l-4 border-rose-400 p-6 sm:p-8 shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="flex-shrink-0 w-full p-6 transition-shadow duration-300 bg-white border-l-4 rounded-lg shadow-md sm:w-96 border-rose-400 sm:p-8 hover:shadow-lg"
               >
                 {/* Client Info */}
-                <div className="flex items-center space-x-4 mb-6">
+                <div className="flex items-center mb-6 space-x-4">
                   {/* Avatar with Colored Background */}
                   <div className={`relative w-10 h-10 flex-shrink-0 rounded-full ${testimonial.bgColor} flex items-center justify-center overflow-hidden`}>
                     <Image
@@ -126,7 +126,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-sm leading-relaxed text-gray-700">
                   {testimonial.text}
                 </p>
               </div>
@@ -134,12 +134,10 @@ export default function TestimonialsSection() {
           </div>
 
           {/* Navigation Buttons - Bottom Right */}
-          <div className="flex justify-end items-center space-x-3 mt-8">
+          <div className="flex items-center justify-end mt-8 mb-8 space-x-3">
             <button
               onClick={() => scroll('left')}
-              className="p-1 rounded-md bg-pink-100 text-rose-400 hover:bg-rose-200 
-                transition-all duration-200 transform hover:scale-110
-                "
+              className="p-1 transition-all duration-200 transform bg-pink-100 rounded-md text-rose-400 hover:bg-rose-200 hover:scale-110 "
               aria-label="Previous testimonials"
             >
               <ChevronLeft size={20} strokeWidth={2.5} />
@@ -147,9 +145,7 @@ export default function TestimonialsSection() {
 
             <button
               onClick={() => scroll('right')}
-              className="p-1 rounded-md bg-pink-100 text-rose-400 hover:bg-rose-200 
-                transition-all duration-200 transform hover:scale-110
-                "
+              className="p-1 transition-all duration-200 transform bg-pink-100 rounded-md text-rose-400 hover:bg-rose-200 hover:scale-110 "
               aria-label="Next testimonials"
             >
               <ChevronRight size={20} strokeWidth={2.5} />
